@@ -10,3 +10,11 @@
 .chat-stream {
   flex: 1;
 }
+.user-message {
+  color:#FFF;
+  background-color: #1185f7;
+}
+.other-message {
+  color:#000;
+  background-color: #e9e9eb;
+}
