@@ -17,7 +17,7 @@ const ChatStream = ({ messages, currentUser }) => {
       key={message.id}
       className="chat-stream"
       message={message}
-      currentUser={currentUser}
+      messageType={currentUser.username === message.user.username ? 'sent' : 'received'}
     />
   ));
 };

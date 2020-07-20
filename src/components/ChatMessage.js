@@ -1,12 +1,12 @@
 import React from "react";
 import "./ChatMessage.css";
 
-const ChatMessage = ({ message, currentUser }) => {
+const ChatMessage = ({ message, messageType }) => {
   console.log();
   return (
     <div
       className={
-        `${message.user.username === currentUser.username
+        `${messageType === 'sent' 
           ? "user-message"
           : "chat-message"} message`
       }

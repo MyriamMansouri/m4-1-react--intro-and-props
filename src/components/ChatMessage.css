@@ -3,17 +3,14 @@
   display: flex;
   align-items: flex-end;
 }
-
-.user-message  {
-  justify-content: flex-end;
-}
-
 .avatar{
   border-radius: 50%;
   height: 30px;
   width: 30px;
   display: block;
 }
+
+
 
 .message-wrapper {
   margin-left:8px;
@@ -29,12 +26,20 @@
   border-radius: 8px;
   padding:5px 8px;
 }
+.body{
+  color:#000;
+  background-color: #e9e9eb;
+}
+.user-message  {
+  justify-content: flex-end;
+}
 
+.user-message .avatar,
+.user-message .name {
+  display: none;
+}
 .user-message .body{
     color:#FFF;
     background-color: #1185f7;
   }
-  .chat-message .body{
-    color:#000;
-    background-color: #e9e9eb;
-  }
+
