@@ -1,22 +1,15 @@
 import React from "react";
 import "./ChatMessage.css";
+import Avatar from './Avatar'
 
 const ChatMessage = ({ message, messageType }) => {
-  console.log();
   return (
     <div
-      className={
-        `${messageType === 'sent' 
-          ? "user-message"
-          : "chat-message"} message`
-      }
+      className={`${
+        messageType === "sent" ? "user-message" : "chat-message"
+      } message`}
     >
-      <img
-        className="avatar"
-        src={message.user.avatar}
-        alt={message.user.username}
-      />
-
+      <Avatar avatar={message.user.avatar} name={message.user.name} size={25} />
       <div className="message-wrapper">
         <p className="name">{message.user.username}</p>
         <p className="body">{message.body}</p>

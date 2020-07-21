@@ -9,7 +9,7 @@ import "./App.css";
 const App = ({ conversation, currentUser }) => {
   return (
     <div className="wrapper">
-      <Header />
+      <Header participants={conversation.participants.filter(user => user.username !== currentUser.username)}/>
       <ChatStream messages={conversation.messages} currentUser={currentUser} />
       <Footer />
     </div>
