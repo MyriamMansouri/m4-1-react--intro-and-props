@@ -1,0 +1,24 @@
+.chat-message .body {
+    display: inline-block;
+    color:#000;
+    background-color: #e9e9eb;
+    border-radius: 8px;
+    padding:5px 8px;
+    display: inline-block;
+}
+
+.chat-message {
+    margin:10px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+.chat-message  .name {
+    margin: 3px 0;
+    font-size: 0.8rem;
+  }
+
+.tip-received {
+    margin-bottom:-8px;
+    margin-right:-3px
+  }
